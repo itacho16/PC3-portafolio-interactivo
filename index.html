@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Interactivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-live="polite" aria-label="Cargando sitio">
+      <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <img
+            src="img/SOFT%20PEREZ.jpg"
+            alt="Logotipo de Soft Perez"
+            class="brand-mark"
+          />
+          <span class="ms-2 fw-bold">Soft Pérez</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">Diseño visual · Estrategia · Tecnología</p>
+            <h1 class="display-4 fw-bold mb-3 animate-text">
+              Creamos marcas <span>memorables</span> con presencia digital.
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Somos un estudio creativo enfocado en transformar ideas en experiencias visuales
+              impactantes para negocios que quieren destacarse online.
+            </p>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="#proyectos" class="btn btn-primary btn-lg px-4">Ver proyectos</a>
+              <a href="#contacto" class="btn btn-secondary btn-lg px-4">Contáctanos</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="floating-panel card-3d">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                  alt="Equipo trabajando en una estrategia digital"
+                  class="hero-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects-section py-5" id="proyectos">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="section-tag">Casos de éxito</p>
+            <h2 class="section-title">Proyectos destacados</h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card rotate-card h-100">
+                <div class="project-icon">01</div>
+                <h3>Identidad visual</h3>
+                <p>
+                  Rebranding completo para una marca boutique con nueva narrativa, paleta y sistema
+                  visual orientado a premium.
+                </p>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card scale-card h-100">
+                <div class="project-icon">02</div>
+                <h3>Landing page</h3>
+                <p>
+                  Optimización de conversión con diseño claro, jerarquía visual y contenido centrado
+                  en la acción del usuario.
+                </p>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card skew-card h-100">
+                <div class="project-icon">03</div>
+                <h3>E-commerce</h3>
+                <p>
+                  Experiencia de compra orientada a móvil, con un catálogo más atractivo y una
+                  navegación intuitiva.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section py-5">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <div class="perspective-box">
+                <div class="tilt-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+                    alt="Persona revisando un proyecto de diseño"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="showcase-copy">
+                <p class="section-tag">Nuestra diferencia</p>
+                <h2 class="section-title">Una propuesta visual con impacto real.</h2>
+                <ul class="feature-list">
+                  <li>Investigación de mercado y estrategia de marca.</li>
+                  <li>Diseño centrado en la experiencia del usuario.</li>
+                  <li>Implementación moderna con una estética premium.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section py-5" id="contacto">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <p class="section-tag">Hablemos</p>
+              <h2 class="section-title">Transformemos tu idea en un proyecto memorable.</h2>
+              <p class="text-secondary mb-0">
+                Diseñamos experiencias que conectan con tu audiencia y elevan la percepción de tu
+                marca en cada punto de contacto digital.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <form class="contact-form">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input id="nombre" type="text" class="form-control" placeholder="Tu nombre" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" type="email" class="form-control" placeholder="tuemail@ejemplo.com" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea id="mensaje" class="form-control" rows="4" placeholder="Cuéntanos tu proyecto"></textarea>
+                </div>
+
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="reset" class="btn btn-outline-primary">Limpiar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center py-3">
+        <p class="mb-0">© 2026 Soft Pérez. Todos los derechos reservados.</p>
+        <p class="mb-0">Página web creada con fines educativos para la UTP.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
